@@ -16,7 +16,7 @@ if (!isSet($_GET['section'])) {
 }
 
 // Get Dropbox URL
-$serverDropboxPath = '/home/andrew/Dropbox/Current Day/';
+$serverDropboxPath = '/daily/ProdSync/Dropbox/Current Day/';
 $localDropboxPath = 'C:/Dropbox/Current Day/';
 //$serverDropboxPath = "C:/Users/Andrew/Dropbox/Current Day/";
 
