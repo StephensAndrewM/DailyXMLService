@@ -17,11 +17,12 @@ if (!isSet($_GET['section'])) {
 
 // Get Dropbox URL
 $serverDropboxPath = '/daily/ProdSync/Dropbox/Current Day/';
-$localDropboxPath = 'C:/Dropbox/Current Day/';
 //$serverDropboxPath = "C:/Users/Andrew/Dropbox/Current Day/";
+$localDropboxPath = 'C:/Dropbox/Current Day/';
 
 // Build URL from Query Params, then Download It
-$url = 'http://localhost/Projects/Tufts/Daily/public_html/xml/category/' . $section . '/date/' . $pubDate;
+//$url = 'http://localhost/Projects/Tufts/Daily/public_html/xml/category/' . $section . '/date/' . $pubDate;
+$url = 'http://tuftsdaily.com/xml/category/' . $section . '/date/' . $pubDate;
 $response = load_remote($url);
 
 // Handle Errors
